@@ -62,7 +62,7 @@ def addUsuario():
                     datos = {
                         'aplicacion': request.json['aplicacion'],
                         'correo': request.json['correo'],
-                        'name': request.json['name'],
+                        'nombre': request.json['name'],
                         'pass': pass_encript,
                     }
                     res=firebase.patch('/usuarios_sistema/'+correo_insert, datos) 

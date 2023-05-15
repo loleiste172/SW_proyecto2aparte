@@ -27,7 +27,7 @@
     $app->get('/test', function($request, $response, $args){
 
         //$response->write(json_encode(get_user('dsfsd@gmail-com'), JSON_PRETTY_PRINT));
-        $now = new DateTime('+2 minutes');
+        $now = new DateTime('+1 minute');
         //string test = DateTime.Now.ToString("d-MM-yyyy HH:mm:ss");
         $response->write($now->format('d-m-Y H:i:s'));
         // $response->write(date_default_timezone_get());
